@@ -1,0 +1,60 @@
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    /* background-image: url("https://images.unsplash.com/photo-1615719413546-198b25453f85?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") ; */
+    background-size: contain;
+    background-image: url("https://www.aqualv.com/wp-content/uploads/2023/09/aqua_group_table_home_reviews.jpg");
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 16vw;
+    animation: fadeIn 3s;
+}
+.header-contents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw,22px);
+}
+.header-contents p{
+    color: white;
+    font-size: 1vw;
+}
+.header-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw 13px);
+    border-radius: 15px;
+}
+@media(max-width:1050px){
+  
+    .header-contents{
+        max-width: 45%;
+        position: relative;
+        top: 20px;
+        left: 10px;
+    }
+    
+}
+@media(max-width:750px){
+   
+    .header-contents{
+        max-width: 65%;
+        position: relative;
+        top: 5px;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}
